@@ -1,0 +1,31 @@
+{
+  "name": "christmas_cssAnimation",
+  "version": "1.0.0",
+  "description": "クリスマスっぽいcssアニメーション作るよ！",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoheiSuda/christmas_cssAnimation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoheiSuda/christmas_cssAnimation/issues"
+  },
+  "homepage": "https://github.com/YoheiSuda/christmas_cssAnimation#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

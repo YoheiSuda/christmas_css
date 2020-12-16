@@ -1,0 +1,124 @@
+#deco {
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  z-index: 200;
+  top: -24vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px){
+    height: 15vh;
+    top: -12vh;
+  }
+  .deco_circle {
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    border: 0.5vh solid white;
+    border-radius: 100%;
+    box-shadow: 0px 8px 16px -6px rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    margin: 0 -4vh;
+    @media screen and (max-width: 768px){
+      width: 15vh;
+      height: 15vh;
+      margin: 0 -2vh;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 30vh;
+      width: 0.5vh;
+      height: 8vh;
+      background: white;
+      border-right: 1px solid black;
+      @media screen and (max-width: 768px){
+        top: 15vh;
+        width: 0.25vh;
+        height: 4vh;
+      }
+    }
+    &_sock {
+      position: absolute;
+      width: 10vh;
+      height: 14vh;
+      top: 36vh;
+      transform: rotate(-15deg);
+      @media screen and (max-width: 768px){
+        top: 18vh;
+        width: 5vh;
+        height: 7vh;
+      }
+      &_white {
+        position: absolute;
+        width: 8vh;
+        height: 3vh;
+        background: white;
+        right: 0;
+        @media screen and (max-width: 768px){
+          width: 4vh;
+          height: 1.5vh;
+        }
+      }
+      &_red {
+        position: absolute;
+        width: 7vh;
+        height: 11vh;
+        background: red;
+        right: 0.5vh;
+        top: 3vh;
+        border-radius: 0 0 20% 0;
+        box-shadow: 0px 8px 16px -6px rgba(0,0,0,0.6);
+        @media screen and (max-width: 768px){
+          width: 3.5vh;
+          height: 5.5vh;
+          right: 0.25vh;
+          top: 1.5vh;
+        }
+        &::before {
+          border-right: none;
+          content: "";
+          position: absolute;
+          display: block;
+          left: -2.5vh;
+          bottom: 0;
+          background: red;
+          width: 2.6vh;
+          height: 5vh;
+          border-radius: 100% 0 0 100%;
+          @media screen and (max-width: 768px){
+            left: -1.25vh;
+            width: 1.3vh;
+            height: 2.5vh;
+          }
+        }
+      }
+    }
+    &_ornament {
+      position: absolute;
+      width: 14vh;
+      height: 14vh;
+      top: 36vh;
+      background: #00A5FF;
+      border-radius: 100%;
+      box-shadow: 0px 8px 16px -6px rgba(0,0,0,0.6);
+      @media screen and (max-width: 768px){
+        width: 7vh;
+        height: 7vh;
+        top: 18vh;
+      }
+      &.ornament_yellow {
+        background: #F2FF49;
+      }
+      &.ornament_green {
+        background: #5AD8BF;
+      }
+      &.ornament_silver {
+        background: #c0c0c0;
+      }
+    }
+  }
+}
